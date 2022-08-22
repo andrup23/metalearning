@@ -1,0 +1,37 @@
+<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Experiencia</title><script src="assets/js/aframe-imports.37ecd1a97c2a1d6b1d28.js"></script><script src="assets/js/dashboard.699cdd7835690f74046b.js"></script></head><body><div id="root-3D" style="position:absolute;width:90vw;height:80vh;text-align:center;left:0;right:0;margin-left:auto;margin-right:auto"><a-scene stats="false" embedded physics="driver: ammo; debug: false; debugDrawMode: 0;" keyboard-shortcuts="enterVR: false" vr-mode-ui="enabled: false;" light="defaultLightsEnabled: true" renderer="
+                antialias: true;
+                colorManagement: true;
+                sortObjects: true;
+                physicallyCorrectLights: false;
+                alpha: true;"><a-assets timeout="600000" id="aframe-assets"><a-asset-item id="model-asset-mall" response-type="arraybuffer" src="assets/media/WaterMall-d8729543d3651615516f..glb"></a-asset-item><a-asset-item id="model-asset-personaje-mujer" response-type="arraybuffer" src="assets/media/mujer_animaciones-136e43aeb99f1bb284d2..glb"></a-asset-item><a-asset-item id="model-asset-personaje-hombre" response-type="arraybuffer" src="assets/media/hombre_animaciones-2963395b1cd4e8c00d26..glb"></a-asset-item><a-asset-item id="model-asset-local-t1" response-type="arraybuffer" src="assets/media/Local-029355ef8e37a1701192..glb"></a-asset-item><a-asset-item id="model-asset-local-t2" response-type="arraybuffer" src="assets/media/Local2-cbb5d3fb5c0b7980d244..glb"></a-asset-item><a-asset-item id="model-asset-local-t3" response-type="arraybuffer" src="assets/media/Local3-fd7140ebb48181abe58c..glb"></a-asset-item><a-asset-item id="model-asset-shelf-1" response-type="arraybuffer" src="assets/media/Estante1-b79e49504ff13b9ce3ae..glb"></a-asset-item><a-asset-item id="model-asset-shelf-2" response-type="arraybuffer" src="assets/media/Estante2-64c6b74381f36cda07ff..glb"></a-asset-item><a-asset-item id="model-asset-shelf-3" response-type="arraybuffer" src="assets/media/Estante3-455e09ebcc5d2050badb..glb"></a-asset-item><a-asset-item id="model-asset-shopping-cart" response-type="arraybuffer" src="assets/media/carrito-c6911cce0c1212295b98..glb"></a-asset-item></a-assets><a-entity id="player-camera" camera="active: true; fov: 80; zoom: 1; far:150;" position="0 0 1" orbit-controls="
+                    target:15.5 0 34; 
+                    minDistance: 10; 
+                    maxDistance: 30;
+                    minPolarAngle:25;
+                    maxPolarAngle:85;
+                    
+                    enableKeys:false;
+                    enablePan:false;"></a-entity><a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="far: 10; objects: .clickable"></a-entity><a-sphere primitive="a-sphere" id="player-head" position="-10 0 -10" visible="false" color="yellow" radius=".2"></a-sphere><a-sphere primitive="a-sphere" id="Local-2" position="1.631 2.54 15.624" visible="true" color="yellow" radius=".2"></a-sphere><a-entity id="locales-camera" camera="active: true; fov: 80; zoom: 1; far:100;" position="0 0 0" orbit-controls="target: 1.631 2.54 15.624;
+                minDistance: 5; 
+                maxDistance: 7; 
+                initialPosition: 0 0 0;
+                minPolarAngle:70;
+                maxPolarAngle:100;
+                minAzimuthAngle:45;
+                maxAzimuthAngle:135;
+                
+                
+                enableKeys:false;
+                enablePan:false;"></a-entity><a-entity id="publicidad"></a-entity><a-entity id="publi-camera" camera="active: true; fov: 80; zoom: 1; far:100;" position="0 0 0" orbit-controls=" 
+                    minDistance: 2; 
+                    maxDistance: 3; 
+                    
+
+                    enableKeys:false;
+                    enablePan:false;"></a-entity><a-entity id="mall-model" gltf-model="#model-asset-mall" mall-materials scale="50 50 50" rotation="0 0 0" position="0 8 0"><a-entity id="Contenidos"><a-entity id="area-ecosistemas" position="0.539 -0.13 0.405" rotation="0 -20 0"><a-entity text="value: Ecosistemas; align: center; color: #3c2786" scale="0.5 0.5 0.5" position="0 0.05956 -0.00662"></a-entity><a-entity text="value: A B C; align: center; color: #3c2786; letterSpacing: 90" scale="0.2 0.2 0.2" position="0 0.02 0"></a-entity><a-image id="publi-A" side="front" width="2" height="1" scale=".02 .02 .02" position="-0.045 0 0"></a-image><a-image id="publi-B" side="front" width="2" height="1" scale=".02 .02 .02"></a-image><a-image id="publi-C" side="front" width="2" height="1" scale=".02 .02 .02" position="0.045 0 0"></a-image></a-entity><a-entity id="area-antropologÍa" position="0.034 -0.13 0.314" rotation="0 90 0"><a-entity text="value: Antropologia; align: center; color: #3c2786" scale="0.5 0.5 0.5" position="0 0.05956 -0.00662"></a-entity><a-entity text="value: D E F; align: center; color: #3c2786; letterSpacing: 90" scale="0.2 0.2 0.2" position="0 0.02 0"></a-entity><a-image id="publi-D" side="front" width="2" height="1" scale=".02 .02 .02" position="-0.045 0 0"></a-image><a-image id="publi-E" side="front" width="2" height="1" scale=".02 .02 .02"></a-image><a-image id="publi-F" side="front" width="2" height="1" scale=".02 .02 .02" position="0.045 0 0"></a-image></a-entity></a-entity></a-entity><a-plane id="suelo" visible="false" height="100" width="100" rotation="-90 0 0" ammo-body="type: static; " ammo-shape="type: box;"></a-plane><a-entity id="local-model" position="-13 0 -11" visible="false"></a-entity><a-entity id="shelfs-3D-container" position="-13 0 -11" visible="false"></a-entity><a-sphere primitive="a-sphere" id="Estante-1" position="-34.6 1.6 -3.65" visible="false" color="yellow" radius=".2"></a-sphere><a-entity id="estantes-camera" camera="active: true; fov: 80; zoom: 1; far:100;" orbit-controls=" 
+                        minDistance: 2; 
+                        maxDistance: 4; 
+                        
+                        
+                        enableKeys:false;
+                        enablePan:false;"></a-entity></a-scene></div><div id="root"></div></body></html>
